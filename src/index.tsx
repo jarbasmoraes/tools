@@ -1,15 +1,24 @@
+import {ThemeProvider} from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+import {Amplify} from 'aws-amplify';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import awsconfig from './aws-exports';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
+import studioTheme from './ui-components/studioTheme';
+
+Amplify.configure(awsconfig);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={studioTheme}>
+      <App/>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
