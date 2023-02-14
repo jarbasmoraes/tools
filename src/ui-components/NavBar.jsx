@@ -35,7 +35,7 @@ export default function NavBar(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Logo29767073")}
+        {...getOverrideProps(overrides, "Logo")}
       >
         <Icon
           width="18px"
@@ -75,8 +75,8 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Logo"
-          {...getOverrideProps(overrides, "Logo29767075")}
+          children="Economildo"
+          {...getOverrideProps(overrides, "Economildo")}
         ></Text>
       </Flex>
     </Flex>
